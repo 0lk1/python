@@ -1,6 +1,7 @@
 """ A program asks the user for a price and outputs only the dollar value,
 e.g. when input is $2.65 -> 2 will be printed to the screen.
 """
+from math import floor
 
 
 def GetPrice():
@@ -24,7 +25,6 @@ def GetPrice():
 
 def main():
     price = GetPrice()
-    from math import floor
     print("The dollar value of the price input is " + str(floor(price)))
 
 
